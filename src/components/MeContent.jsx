@@ -1,5 +1,7 @@
+import MyPhoto from '../assets/react.svg'
+
 function MeContent() {
-  return <p>My Photo</p>;
+  return <img src={MyPhoto}/>
 }
 
 export default MeContent;

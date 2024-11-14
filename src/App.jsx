@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="w-screen h-screen bg-custom-dark flex flex-col">
       <Nav />
-      <section className="flex p-20 w-full justify-center items-center h-4/5">
+      <section className="flex p-18 w-full justify-center items-center h-4/5">
         <HeroContent />
         <MeContent />
       </section>
