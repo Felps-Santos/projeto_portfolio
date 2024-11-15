@@ -1,7 +1,11 @@
-import MyPhoto from '../assets/react.svg'
+import Photo from "../assets/potrait.png";
 
 function MeContent() {
-  return <img src={MyPhoto}/>
+  return (
+    <div className="flex w-1/2 justify-center">
+      <img src={Photo} className="bg-gray-300 rounded-2xl w-4/6" />
+    </div>
+  );
 }
 
 export default MeContent;

@@ -5,9 +5,13 @@ import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div className="w-screen h-screen bg-custom-dark flex flex-col">
+    <div className="w-screen min-h-screen bg-custom-dark flex flex-col">
       <Nav />
-      <section className="flex p-18 w-full justify-center items-center h-4/5">
+      <section className="flex justify-center items-center h-4/5 w-screen">
+        <HeroContent />
+        <MeContent />
+      </section>
+      <section className="flex justify-center items-center h-4/5 w-screen">
         <HeroContent />
         <MeContent />
       </section>
