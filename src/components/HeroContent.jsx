@@ -1,4 +1,4 @@
-import { CircleArrowOutDownRight, Github, Linkedin } from "lucide-react";
+import { CircleArrowOutDownRight, Github, Linkedin, MoveUpRight } from "lucide-react";
 
 function HeroContent() {
   return (
@@ -14,10 +14,23 @@ function HeroContent() {
         building accessible and user friendly websites.
       </h2>
       <div className="flex items-center gap-5 mt-10">
-        <button className="flex items-center gap-2 px-6 py-3 bg-[#D3E97A] text-black rounded-full hover:shadow-md transition-shadow duration-300 w-max font-manrope font-bold text-lg">
-          CONTACT ME
-          <CircleArrowOutDownRight size={20} />
+        {/* Botão "CONTACT ME" com a bolinha à direita */}
+        <button className="flex items-center gap-4 px-7 py-3 bg-[#D3E97A] text-black rounded-full hover:shadow-md transition-all duration-300 min-w-[200px] font-manrope font-bold text-lg group transform hover:scale-105 relative">
+          {/* Texto fixo */}
+          <span className="relative z-10">
+            CONTACT ME
+          </span>
+          {/* Bolinha preta que expande para mostrar o ícone dentro */}
+          <span className="flex items-center justify-center w-4 h-4 bg-black rounded-full transition-all duration-300 group-hover:w-10 group-hover:h-10 absolute right-5 group-hover:right-1">
+            {/* Ícone de seta aparece dentro da bolinha quando expandida */}
+            <MoveUpRight
+              size={20}
+              className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            />
+          </span>
         </button>
+
+        {/* Botões de redes sociais (LinkedIn e GitHub) */}
         <button
           onClick={() =>
             window.open(
@@ -25,7 +38,7 @@ function HeroContent() {
               "_blank"
             )
           }
-          className="flex items-center justify-center bg-[#222222] rounded-full hover:shadow-md transition-shadow duration-300 w-14 h-14"
+          className="flex items-center justify-center bg-[#222222] rounded-full hover:shadow-md transition-shadow duration-300 w-14 h-14 transform hover:scale-110"
         >
           <Linkedin color="#D3E97A" />
         </button>
@@ -33,7 +46,7 @@ function HeroContent() {
           onClick={() =>
             window.open("https://github.com/Felps-Santos", "_blank")
           }
-          className="flex items-center justify-center bg-[#222222] rounded-full hover:shadow-md transition-shadow duration-300 w-14 h-14"
+          className="flex items-center justify-center bg-[#222222] rounded-full hover:shadow-md transition-shadow duration-300 w-14 h-14 transform hover:scale-110"
         >
           <Github color="#D3E97A" />
         </button>

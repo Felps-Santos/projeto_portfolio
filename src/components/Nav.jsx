@@ -5,9 +5,9 @@ function Nav() {
         Felipe Santos
       </h3>
       <div className="flex space-x-5">
-        <button className="text-xl font-sans hover:text-white">Work</button>
-        <button className="text-xl font-sans hover:text-white">About</button>
-        <button className="text-xl font-sans hover:text-white">Contact</button>
+        <button className="text-xl font-sans hover:text-white hover:text-2xl">Work</button>
+        <button className="text-xl font-sans hover:text-white hover:text-2xl">About</button>
+        <button className="text-xl font-sans hover:text-white hover:text-2xl">Contact</button>
       </div>
     </nav>
   );
